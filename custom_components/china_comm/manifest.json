@@ -1,7 +1,7 @@
 {
   "domain": "china_comm",
   "name": "移动运营商",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "documentation": "https://github.com/sfairy/ha_china_comm",
   "issue_tracker": "https://github.com/sfairy/ha_china_comm/issues",
   "codeowners": ["@sfairy"],
