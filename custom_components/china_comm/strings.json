@@ -1,0 +1,89 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Select carrier",
+        "description": "Choose the carrier type to add (China Telecom / China Unicom).",
+        "data": {
+          "entry_type": "Carrier"
+        }
+      },
+      "telecom": {
+        "title": "China Telecom",
+        "description": "Enter your China Telecom account information.",
+        "data": {
+          "phonenum": "Phone number",
+          "password": "Service password",
+          "telecom_device_id": "Trusted device ID (optional)",
+          "refresh_interval": "Refresh interval (minutes)"
+        }
+      },
+      "unicom_phone": {
+        "title": "China Unicom - phone number",
+        "description": "Optionally enter a phone number used for entity naming.",
+        "data": {
+          "phonenum": "Phone number (optional)"
+        }
+      },
+      "unicom": {
+        "title": "China Unicom",
+        "description": "Configure China Unicom billing info. OpenID is required from the Unicom mini program.",
+        "data": {
+          "name": "Name",
+          "openid": "OpenID",
+          "phonenum": "Phone number (optional, for entity naming)",
+          "refresh_interval": "Refresh interval (minutes)"
+        }
+      },
+      "init": {
+        "title": "China Unicom options",
+        "data": {
+          "name": "Name",
+          "openid": "OpenID",
+          "phonenum": "Phone number (optional)",
+          "refresh_interval": "Refresh interval (minutes)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "telecom_no_options": "China Telecom options are not available.",
+      "no_options": "No options available for this integration.",
+      "unknown_error_config": "Failed to load configuration. Check the logs or try again later."
+    },
+    "error": {
+      "invalid_phone_number": "Invalid phone number. Enter an 11-digit number.",
+      "openid_required": "OpenID is required",
+      "unknown_error_config": "An unknown error occurred during setup. Please try again.",
+      "login_connection_failed": "Connection failed: {error}",
+      "login_server_error": "Login failed: unexpected server response. Please try again later.",
+      "login_failed": "Login failed: {error}",
+      "login_need_captcha": "Captcha required. Complete verification in the China Telecom app.",
+      "login_device_untrusted": "Device is not trusted. Provide a trusted device ID or trust this device in the app.",
+      "login_too_frequent": "Too many login attempts. Please try again later.",
+      "login_account_locked": "Account locked. Contact customer service to unlock.",
+      "login_password_locked": "Too many incorrect password attempts. Please try again later.",
+      "login_invalid_credentials": "Incorrect phone number or password. Please check and try again."
+    }
+  },
+  "options": {
+    "abort": {
+      "no_options": "No options available for this integration.",
+      "unknown_error_config": "Failed to load configuration. Check the logs or try again later."
+    },
+    "step": {
+      "init": {
+        "title": "Options",
+        "data": {
+          "name": "Name",
+          "openid": "OpenID",
+          "phonenum": "Phone number (optional)",
+          "refresh_interval": "Refresh interval",
+          "password": "Service password",
+          "telecom_device_id": "Trusted device ID"
+        }
+      }
+    }
+  },
+  "title": "China Carriers"
+}

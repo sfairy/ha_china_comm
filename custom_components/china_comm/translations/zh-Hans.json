@@ -1,0 +1,89 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "选择运营商",
+                "description": "请选择要添加的运营商类型（电信/联通）。",
+                "data": {
+                    "entry_type": "运营商"
+                }
+            },
+            "telecom": {
+                "title": "中国电信（China Telecom）",
+                "description": "请填写您的中国电信账号信息。",
+                "data": {
+                    "phonenum": "手机号",
+                    "password": "服务密码",
+                    "telecom_device_id": "设备信任ID（可选）",
+                    "refresh_interval": "刷新间隔（分钟）"
+                }
+            },
+            "unicom_phone": {
+                "title": "中国联通 - 手机号",
+                "description": "可选填写手机号，用于实体命名与标题显示。",
+                "data": {
+                    "phonenum": "手机号（可选）"
+                }
+            },
+            "unicom": {
+                "title": "中国联通（China Unicom）",
+                "description": "配置联通话费信息。需要从联通小程序获取 OpenID。",
+                "data": {
+                    "name": "名称",
+                    "openid": "OpenID",
+                    "phonenum": "手机号（可选，用于实体标识）",
+                    "refresh_interval": "刷新间隔（分钟）"
+                }
+            },
+            "init": {
+                "title": "中国联通选项",
+                "data": {
+                    "name": "名称",
+                    "openid": "OpenID",
+                    "phonenum": "手机号（可选）",
+                    "refresh_interval": "刷新间隔（分钟）"
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "该设备已被配置。",
+            "telecom_no_options": "中国电信暂不支持选项修改。",
+            "no_options": "该集成暂无配置选项。",
+            "unknown_error_config": "加载配置时发生错误，请查看日志或稍后重试。"
+        },
+        "error": {
+            "invalid_phone_number": "无效的手机号码，请输入 11 位数字的手机号码",
+            "openid_required": "OpenID 是必填项",
+            "unknown_error_config": "配置过程中出现未知错误，请重试",
+            "login_connection_failed": "连接失败: {error}",
+            "login_server_error": "登录失败: 服务器返回异常，请稍后重试",
+            "login_failed": "登录失败: {error}",
+            "login_need_captcha": "需要验证码，请在掌上营业厅 App 完成验证",
+            "login_device_untrusted": "设备未信任，请提供设备信任 ID 或在 App 中信任设备",
+            "login_too_frequent": "登录频繁，请稍后重试",
+            "login_account_locked": "账号已锁定，请联系客服解锁",
+            "login_password_locked": "密码错误次数过多，请稍后重试",
+            "login_invalid_credentials": "手机号或密码错误，请检查后重试"
+        }
+    },
+    "options": {
+        "abort": {
+            "no_options": "该集成暂无配置选项。",
+            "unknown_error_config": "加载配置时发生错误，请查看日志或稍后重试。"
+        },
+        "step": {
+            "init": {
+                "title": "选项",
+                "data": {
+                    "name": "名称",
+                    "openid": "OpenID",
+                    "phonenum": "手机号（可选）",
+                    "refresh_interval": "刷新间隔",
+                    "password": "服务密码",
+                    "telecom_device_id": "设备信任ID"
+                }
+            }
+        }
+    },
+    "title": "移动运营商"
+}

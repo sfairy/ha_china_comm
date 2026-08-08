@@ -1,0 +1,14 @@
+{
+  "domain": "china_comm",
+  "name": "移动运营商",
+  "version": "1.0.0",
+  "documentation": "https://github.com/sfairy/ha_china_comm",
+  "issue_tracker": "https://github.com/sfairy/ha_china_comm/issues",
+  "codeowners": ["@sfairy"],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "integration_type": "service",
+  "requirements": ["pycryptodome", "certifi"],
+  "dependencies": [],
+  "loggers": ["custom_components.china_comm"]
+}
