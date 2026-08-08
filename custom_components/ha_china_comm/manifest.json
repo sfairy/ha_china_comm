@@ -1,5 +1,5 @@
 {
-  "domain": "china_comm",
+  "domain": "ha_china_comm",
   "name": "移动运营商",
   "version": "1.0.0",
   "documentation": "https://github.com/sfairy/ha_china_comm",
@@ -10,5 +10,5 @@
   "integration_type": "service",
   "requirements": ["pycryptodome", "certifi"],
   "dependencies": [],
-  "loggers": ["custom_components.china_comm"]
+  "loggers": ["custom_components.ha_china_comm"]
 }
