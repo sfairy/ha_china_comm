@@ -1,4 +1,4 @@
-# 移动运营商 (ha_china_comm)
+# 移动运营商 (china_comm)
 
 Home Assistant 自定义集成，用于查询中国电信 / 中国联通套餐用量与话费信息。
 
@@ -29,7 +29,7 @@ Home Assistant 自定义集成，用于查询中国电信 / 中国联通套餐�
 
 ### 手动安装
 
-1. 将本仓库的 `custom_components/ha_china_comm` 目录复制到 Home Assistant 配置目录下的 `custom_components/`
+1. 将本仓库的 `custom_components/china_comm` 目录复制到 Home Assistant 配置目录下的 `custom_components/`
 2. 重启 Home Assistant
 3. 设置 → 设备与服务 → 添加集成 → 搜索「移动运营商」
 

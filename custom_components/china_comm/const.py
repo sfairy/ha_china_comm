@@ -13,7 +13,7 @@ import re
 
 # ========== 集成标识 ==========
 # 集成在 Home Assistant 中的唯一域名，用于 manifest、配置项、实体 ID 等
-DOMAIN = "ha_china_comm"
+DOMAIN = "china_comm"
 
 # ========== 配置条目类型 ==========
 # 配置项中用于区分运营商类型的键名
